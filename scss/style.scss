@@ -1,0 +1,448 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+:root
+{
+    --primary-color: #FFB84B;
+    --secondary-color: #1B1B1B;
+}
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul
+{
+    list-style-type: none;
+}
+p
+{
+    line-height: 1.7;
+}
+a
+{
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+}
+body
+{
+    font-family: "Outfit", sans-serif;
+    background: #1B1B1B;
+    color: #999999;
+}
+
+.container
+{
+    max-width: 1180px;
+    margin: auto;
+    padding:10px;
+}
+.d-flex
+{
+    display: flex;
+    
+}
+
+.bg-img
+{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://duruthemes.com/demo/html/renax/dark/img/slider/11.jpg);
+    background-size: cover;
+    min-height: 100vh;
+    position: relative;
+}
+.logo
+{
+    width: 120px;;
+}
+.header
+{
+    color: #fff;
+    .phone
+    {
+        transform: rotate(320deg);
+    }
+}
+.btn
+{
+    font-size: 21px ;
+    width: 48px;
+}
+.btn1
+    {
+        border: 1px solid #FFB84B;
+        background: var(--primary-color);
+        border-radius: 40px;
+        padding: 15px 50px;
+        display: inline-block;
+        &:hover
+        {
+            background: #fff;
+        }
+    }
+.banner
+{   
+    color: #fff;
+    .content
+    {
+        position: absolute;
+        left: 180px;
+        top: 160px;
+    }
+    h1 
+    {
+        font-size: 90px;
+        font-weight: bold;
+    }
+    
+    .btn2
+    {
+        border: 1px solid #fff;
+        border-radius: 40px;
+        padding: 15px 50px;
+        display: inline-block;
+        &:hover
+        {
+            background: #FFB84B;
+            color: #000 !important;
+        }
+    }
+}
+
+ 
+    .article
+    {
+        position: relative;
+        overflow: hidden;
+        img 
+        {
+            transition: 0.9s;
+            &:hover 
+            {
+                transform: scale(1.1);
+            }
+        }
+    }
+    .icon-bg
+    {
+        background: var(--secondary-color) ;
+        
+    }
+    svg 
+    {
+        vertical-align: middle;
+        overflow-clip-margin: content-box;
+        overflow: hidden;
+    }
+    .article .curve-btn {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 85px;
+        height: 85px;
+        line-height: 55px;
+        text-align: center;
+        border-radius: 0 40px 0 0;
+        
+        .play
+        {
+            position: absolute;
+            top: 15px;
+            left: 12px;
+            right: 15px;
+            bottom: 15px;
+            border-radius: 100%;
+            background: transparent;
+            color: #fff;
+            .icon
+            {
+                width: 60px;
+                height: 60px;
+                font-size: 21px;
+                color: #fff;
+                border: 1px solid #f5b754;
+                border-radius: 100%;
+                line-height: 60px;
+                &:hover
+                {
+                    background: var(--primary-color) ;
+                }
+            }
+        }
+        .br-left-top {
+            position: absolute;
+            top: -24px;
+            left: -1px;
+            transform: rotate(270deg);
+            line-height: 1;
+        }
+        svg
+        {
+            width: 24px;
+            height: 24px;
+        }
+        .br-right-bottom 
+        {
+            position: absolute;
+            bottom: -1px;
+            right: -24px;
+            transform: rotate(270deg);
+            line-height: 1;
+        }
+    }
+    
+
+
+
+.booking
+{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),  url(https://duruthemes.com/demo/html/renax/dark/img/slider/2.jpg);
+    background-attachment: fixed;
+    padding: 120px;
+    .book 
+    {
+        background: var(--secondary-color);
+        padding: 11px;
+        border-radius: 40px;
+        color: #999999;
+        .select
+        {
+            padding: 22px 10px;
+            background: #1B1B1B;
+            color: #999999;
+            border: #000;
+        }
+        .datepicker
+        {
+            padding: 22px 10px;
+            border: #000;
+            background-color: #1B1B1B;
+        }
+    }
+}
+
+.select
+{   
+    .car-content
+    {
+        border: 1px solid #222222;
+        background: #222222;
+        border-radius: 25px;
+        padding: 20px;
+        position: absolute;
+        left: 170px;
+        bottom: -60px;
+        margin: auto;
+        max-width: 800px;
+        i 
+        {
+            color: #f5b754;
+        }
+    }
+    .btn3 
+    {
+        background: var(--primary-color);
+        padding: 14px;
+        border-radius: 40px ;
+    }
+}
+
+.gap-line
+{
+    border: 0;
+    border-right: 1px solid;
+    border-color: var(--primary-color);
+    width: 1px;
+    height: 20px;
+    z-index: 9;
+    position: relative;
+    margin: 100px auto;
+
+}
+.car-types
+{
+    .caption
+    {
+        left: 25px;
+        top: 30px;
+    }
+}
+
+.content-2
+{
+    .cont 
+    {
+        border: 1px solid #222222;
+        background: #222222;
+        border-radius: 20px;
+        margin: auto;
+        padding: 70px 40px;
+        
+    }
+    .play-1
+        {
+            position: absolute;
+            top: 15px;
+            left: 12px;
+            right: 15px;
+            bottom: 15px;
+            border-radius: 100%;
+            background: #222222;
+            color: #fff;
+            .icon
+            {
+                width: 60px;
+                height: 60px;
+                font-size: 21px;
+                color: #fff;
+                border: 1px solid #222222;
+                border-radius: 100%;
+                line-height: 60px;
+                font-size: 14px;
+                font-weight: bold;
+                
+            }
+        }
+}
+
+.promo
+{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),  url(https://duruthemes.com/demo/html/renax/dark/img/slider/1.jpg);
+    background-attachment: fixed;
+    padding: 120px;
+    .btn2
+    {
+        font-size: 50px ;
+        width: 85px;
+        height: 85px;
+        margin: auto;
+    }
+}
+
+.blog
+{   
+    padding-bottom: 200px;
+    .comments
+    {
+        border: 1px solid #222222;
+        border-radius: 20px;
+        background: #222222;
+        padding: 20px 10px;
+        left: 18px;
+        bottom: -100px;
+        i 
+        {
+            color: #FFB84B;
+        }
+        li 
+        {
+            font-size: 12px;
+        }
+        .btn3
+        {
+            left: 35px;
+            top: -18px;
+            border: 1px solid #FFB84B;
+            background: #FFB84B;
+            border-radius: 5px;
+            font-size: 12px;
+            padding: 4px 8px;
+        }
+    }
+}
+
+.contact
+{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),  url(https://duruthemes.com/demo/html/renax/dark/img/slider/3.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    padding: 120px;
+    .btn1
+    {
+        border: 1px solid #FFB84B;
+        background: var(--primary-color);
+        border-radius: 40px;
+        padding: 15px 30px;
+        display: inline-block;
+        &:hover
+        {
+            background: #fff;
+        }
+    }
+    .btn2
+    {
+        border: 1px solid #fff;
+        border-radius: 40px;
+        padding: 15px 30px;
+        display: inline-block;
+        &:hover
+        {
+            background: #FFB84B;
+            color: #000 !important;
+        }
+    }
+}
+
+.brands
+{
+    background: #222222;
+}
+
+footer
+{
+
+    color: #787878 !important;
+    .footer-logo
+    {
+        width: 120px;
+    }
+    p 
+    {
+        font-size: 14px;
+    }
+    i 
+    {
+        color: #fff;
+    }
+    .links
+    {
+        padding: 0px 90px;
+        i 
+        {
+            color: #FFB84B;
+            font-size: 15px;
+
+        }
+    }
+    .email
+    {
+        background: transparent;
+        border: 1px solid #FFB84B;
+        border-radius: 40px;
+        padding: 15px 80px;
+        color: #fff;
+    }
+    .btn-4
+    {
+        right: 7px;
+        bottom: 6px;
+        i 
+        {
+            color: #000;
+            
+        }
+        &:hover
+        {
+            background: #fff;
+        }
+    }
+}
+
+.copyright
+{
+    h6 
+    {
+        font-size: 12px;
+        padding: 20px 0;
+    }
+}

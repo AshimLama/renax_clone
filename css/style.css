@@ -1,0 +1,382 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+:root {
+  --primary-color: #FFB84B;
+  --secondary-color: #1B1B1B;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+ul {
+  list-style-type: none;
+}
+
+p {
+  line-height: 1.7;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+  display: inline-block;
+}
+
+body {
+  font-family: "Outfit", sans-serif;
+  background: #1B1B1B;
+  color: #999999;
+}
+
+.container {
+  max-width: 1180px;
+  margin: auto;
+  padding: 10px;
+}
+
+.d-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.bg-img {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url(https://duruthemes.com/demo/html/renax/dark/img/slider/11.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://duruthemes.com/demo/html/renax/dark/img/slider/11.jpg);
+  background-size: cover;
+  min-height: 100vh;
+  position: relative;
+}
+
+.logo {
+  width: 120px;
+}
+
+.header {
+  color: #fff;
+}
+.header .phone {
+  -webkit-transform: rotate(320deg);
+          transform: rotate(320deg);
+}
+
+.btn {
+  font-size: 21px;
+  width: 48px;
+}
+
+.btn1 {
+  border: 1px solid #FFB84B;
+  background: var(--primary-color);
+  border-radius: 40px;
+  padding: 15px 50px;
+  display: inline-block;
+}
+.btn1:hover {
+  background: #fff;
+}
+
+.banner {
+  color: #fff;
+}
+.banner .content {
+  position: absolute;
+  left: 180px;
+  top: 160px;
+}
+.banner h1 {
+  font-size: 90px;
+  font-weight: bold;
+}
+.banner .btn2 {
+  border: 1px solid #fff;
+  border-radius: 40px;
+  padding: 15px 50px;
+  display: inline-block;
+}
+.banner .btn2:hover {
+  background: #FFB84B;
+  color: #000 !important;
+}
+
+.article {
+  position: relative;
+  overflow: hidden;
+}
+.article img {
+  -webkit-transition: 0.9s;
+  transition: 0.9s;
+}
+.article img:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.icon-bg {
+  background: var(--secondary-color);
+}
+
+svg {
+  vertical-align: middle;
+  overflow-clip-margin: content-box;
+  overflow: hidden;
+}
+
+.article .curve-btn {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 85px;
+  height: 85px;
+  line-height: 55px;
+  text-align: center;
+  border-radius: 0 40px 0 0;
+}
+.article .curve-btn .play {
+  position: absolute;
+  top: 15px;
+  left: 12px;
+  right: 15px;
+  bottom: 15px;
+  border-radius: 100%;
+  background: transparent;
+  color: #fff;
+}
+.article .curve-btn .play .icon {
+  width: 60px;
+  height: 60px;
+  font-size: 21px;
+  color: #fff;
+  border: 1px solid #f5b754;
+  border-radius: 100%;
+  line-height: 60px;
+}
+.article .curve-btn .play .icon:hover {
+  background: var(--primary-color);
+}
+.article .curve-btn .br-left-top {
+  position: absolute;
+  top: -24px;
+  left: -1px;
+  -webkit-transform: rotate(270deg);
+          transform: rotate(270deg);
+  line-height: 1;
+}
+.article .curve-btn svg {
+  width: 24px;
+  height: 24px;
+}
+.article .curve-btn .br-right-bottom {
+  position: absolute;
+  bottom: -1px;
+  right: -24px;
+  -webkit-transform: rotate(270deg);
+          transform: rotate(270deg);
+  line-height: 1;
+}
+
+.booking {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url(https://duruthemes.com/demo/html/renax/dark/img/slider/2.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://duruthemes.com/demo/html/renax/dark/img/slider/2.jpg);
+  background-attachment: fixed;
+  padding: 120px;
+}
+.booking .book {
+  background: var(--secondary-color);
+  padding: 11px;
+  border-radius: 40px;
+  color: #999999;
+}
+.booking .book .select {
+  padding: 22px 10px;
+  background: #1B1B1B;
+  color: #999999;
+  border: #000;
+}
+.booking .book .datepicker {
+  padding: 22px 10px;
+  border: #000;
+  background-color: #1B1B1B;
+}
+
+.select .car-content {
+  border: 1px solid #222222;
+  background: #222222;
+  border-radius: 25px;
+  padding: 20px;
+  position: absolute;
+  left: 170px;
+  bottom: -60px;
+  margin: auto;
+  max-width: 800px;
+}
+.select .car-content i {
+  color: #f5b754;
+}
+.select .btn3 {
+  background: var(--primary-color);
+  padding: 14px;
+  border-radius: 40px;
+}
+
+.gap-line {
+  border: 0;
+  border-right: 1px solid;
+  border-color: var(--primary-color);
+  width: 1px;
+  height: 20px;
+  z-index: 9;
+  position: relative;
+  margin: 100px auto;
+}
+
+.car-types .caption {
+  left: 25px;
+  top: 30px;
+}
+
+.content-2 .cont {
+  border: 1px solid #222222;
+  background: #222222;
+  border-radius: 20px;
+  margin: auto;
+  padding: 70px 40px;
+}
+.content-2 .play-1 {
+  position: absolute;
+  top: 15px;
+  left: 12px;
+  right: 15px;
+  bottom: 15px;
+  border-radius: 100%;
+  background: #222222;
+  color: #fff;
+}
+.content-2 .play-1 .icon {
+  width: 60px;
+  height: 60px;
+  font-size: 21px;
+  color: #fff;
+  border: 1px solid #222222;
+  border-radius: 100%;
+  line-height: 60px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.promo {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url(https://duruthemes.com/demo/html/renax/dark/img/slider/1.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://duruthemes.com/demo/html/renax/dark/img/slider/1.jpg);
+  background-attachment: fixed;
+  padding: 120px;
+}
+.promo .btn2 {
+  font-size: 50px;
+  width: 85px;
+  height: 85px;
+  margin: auto;
+}
+
+.blog {
+  padding-bottom: 200px;
+}
+.blog .comments {
+  border: 1px solid #222222;
+  border-radius: 20px;
+  background: #222222;
+  padding: 20px 10px;
+  left: 18px;
+  bottom: -100px;
+}
+.blog .comments i {
+  color: #FFB84B;
+}
+.blog .comments li {
+  font-size: 12px;
+}
+.blog .comments .btn3 {
+  left: 35px;
+  top: -18px;
+  border: 1px solid #FFB84B;
+  background: #FFB84B;
+  border-radius: 5px;
+  font-size: 12px;
+  padding: 4px 8px;
+}
+
+.contact {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url(https://duruthemes.com/demo/html/renax/dark/img/slider/3.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://duruthemes.com/demo/html/renax/dark/img/slider/3.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  padding: 120px;
+}
+.contact .btn1 {
+  border: 1px solid #FFB84B;
+  background: var(--primary-color);
+  border-radius: 40px;
+  padding: 15px 30px;
+  display: inline-block;
+}
+.contact .btn1:hover {
+  background: #fff;
+}
+.contact .btn2 {
+  border: 1px solid #fff;
+  border-radius: 40px;
+  padding: 15px 30px;
+  display: inline-block;
+}
+.contact .btn2:hover {
+  background: #FFB84B;
+  color: #000 !important;
+}
+
+.brands {
+  background: #222222;
+}
+
+footer {
+  color: #787878 !important;
+}
+footer .footer-logo {
+  width: 120px;
+}
+footer p {
+  font-size: 14px;
+}
+footer i {
+  color: #fff;
+}
+footer .links {
+  padding: 0px 90px;
+}
+footer .links i {
+  color: #FFB84B;
+  font-size: 15px;
+}
+footer .email {
+  background: transparent;
+  border: 1px solid #FFB84B;
+  border-radius: 40px;
+  padding: 15px 80px;
+  color: #fff;
+}
+footer .btn-4 {
+  right: 7px;
+  bottom: 6px;
+}
+footer .btn-4 i {
+  color: #000;
+}
+footer .btn-4:hover {
+  background: #fff;
+}
+
+.copyright h6 {
+  font-size: 12px;
+  padding: 20px 0;
+}/*# sourceMappingURL=style.css.map */
